@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DemoMod4" />
         <module name="DemoMod3" />
-        <module name="DemoMod2" />
-        <module name="DemoMod1" />
+        <module name="DemoModNYMag" />
         <module name="Generic" />
+        <module name="DemoModEBay" />
         <module name="DemoMod6" />
         <module name="DemoMod5" />
       </profile>

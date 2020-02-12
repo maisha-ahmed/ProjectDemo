@@ -10,8 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>DemoMod1</module>
-        <module>DemoMod2</module>
+        <module>DemoModNYMag</module>
+        <module>DemoModEbay</module>
         <module>DemoMod3</module>
         <module>DemoMod4</module>
         <module>DemoMod5</module>

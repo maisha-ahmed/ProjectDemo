@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ebay Test" parallel="false">
+
+    <parameter name="cloud" value="false"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <!--    <parameter name="os_version" value="Mojave"/>-->
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="79"/>
+    <parameter name="url" value="https://www.ebay.com"/>
+    <!--    <parameter name="platform" value="mac"/>-->
+
+    <test name="Automation tests">
+        <classes>
+            <class name="keywordtests2.TestKeyword2"/>
+        </classes>
+    </test>
+</suite>
