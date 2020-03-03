@@ -12,6 +12,24 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/* This data reader has been updated by Maisha Ahmed to allow users to use .xlsx files in their hybrid frameworks.
+    1. Add a new maven dependency specifically for xlsx files to the root pom and Generic pom:
+    https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml/3.17
+    2. Check that the poms can compile
+    3. If you cloned or downloaded my project, then you can copy my "newutility" package and paste it into your Generic
+    module. Else, make a new package and copy and paste the NewDataReader class from github into your own project.
+    4. Open a new excel workbook, add the keywords, and save it as a .xlsx file
+    5. Copy and paste the .xlsx file into the "data" directory in your module
+    6. In your "FeaturesToBe[insert verb here]" class, you need to make a new object of the NewDataReader class and
+    write a new method for IntelliJ to read data from your new excel file. Or you can copy and paste mine. Either way is fine.
+    Make sure that the path for your excel file is correct.
+    ***My Features and FeaturesToBeClicked classes are inside the"keyword" package, which is inside the DemoModNYMag module.
+    Here's the path: DemoModNYMag/src/main/java/keyword.***
+    7. In your Features class, scroll down to the selectFeatures() method, and change the method inside the loop from
+    "getDataFromExcelFile()"/"getDataFromExcelFileForFeaturesChoice()" to the new method "getDataFromXLSXFile()"
+    8. Run your keyword-driven tests from the test runner. Do let me know if it actually works.
+ */
+
 public class NewDataReader
 {
     XSSFWorkbook wb = null;

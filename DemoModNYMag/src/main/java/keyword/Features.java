@@ -67,7 +67,8 @@ public class Features extends CommonAPI
     {
         FeaturesToBeClicked featuresToBeClicked = new FeaturesToBeClicked();
         String [] testSteps = featuresToBeClicked.getDataFromXLSXFile();
-        for(int i=1; i<testSteps.length; i++) {
+        for(int i=1; i<testSteps.length; i++)
+        {
             select(testSteps[i], driver1);
         }
     }
