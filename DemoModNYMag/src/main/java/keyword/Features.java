@@ -63,9 +63,10 @@ public class Features extends CommonAPI
                 throw new InvalidArgumentException("Invalid features choice");
         }
     }
-    public void selectFeatures(WebDriver driver1)throws IOException, InterruptedException{
+    public void selectFeatures(WebDriver driver1)throws IOException, InterruptedException
+    {
         FeaturesToBeClicked featuresToBeClicked = new FeaturesToBeClicked();
-        String [] testSteps = featuresToBeClicked.getDataFromExcelFile();
+        String [] testSteps = featuresToBeClicked.getDataFromXLSXFile();
         for(int i=1; i<testSteps.length; i++) {
             select(testSteps[i], driver1);
         }
